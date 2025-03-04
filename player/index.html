@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7ajra War9a M9as</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Sigmar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><span id="red">!</span> 7ajra War9a M9as <span id="red">!</span></h1>
+    <div  id="chat" class="chat"><button class="bttn" id="chat-toggle">Chati</button>
+        
+        <div id="chat-modal" class="modal test2" style="display: none;" >
+            <div class="modal-content">
+                <div id="message-container"></div>
+                <form id="form">
+                    <input type="text" id="message-input" placeholder="zzz">
+                    <button type="submit" id="send-button">Send</button>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    <div id="initial">
+        <button class="bttn" onclick="createGame()">A3mel tor7 </button>
+        <h2>Wella </h2>
+        <input type="text" name="" id="roomUniqueId" placeholder="7ot codek linna ">
+        <button class="bttn" onclick="joinGame()">Joini  tor7 </button>
+    </div> 
+    <div id="gamePlay" class="test  " style="display:none">
+        <div id="waitingArea"></div>
+        <div id="hawScore"class="score-container">
+            <h4 id="player1Score">Player 1 Score: <span class="score" id="p1Score">0</span></h4>
+            <h4 id="player2Score">Player 2 Score: <span class="score" id="p2Score">0</span></h4>
+        </div>
+        <div id="gameArea" style="display:none">
+            <h3>I5tar : </h3>
+            <div class="btn-container" id="btn-container">
+                <button onclick="sendChoice('Hajra')" id="Hajra-btn" class="btn"> 7ajra</button>
+                <button onclick="sendChoice('War9a')" id="War9a-btn" class="btn"> War9a</button>
+                <button onclick="sendChoice('M9as')" id="M9as-btn" class="btn"> M9as</button>
+            </div>
+            <h3>Player 2 : </h3>
+            <div id="player2Choice">
+                <h4 id="eywelle" >Player2  3osso rzin stanneh </h4>
+            </div>
+
+        </div>
+        <div id="winnerArea"></div>
+        <div class="replay hidden "><button  class="btn" id="replay" onclick="replay()">t3awed?</button></div>
+    </div>
+    <script src="player.js"></script>
+</body>
+</html>

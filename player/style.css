@@ -1,0 +1,277 @@
+* {
+    background-color: #FDF0D5;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Rock 3D", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #003049;
+    text-decoration-line: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: "Rock 3D", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #003049;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: "Sigmar", serif;
+    color: #780000;
+    font-size: 1.5rem;
+    padding: 2px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+h4{   
+    font-family: "Itim", serif;
+    color: #780000;
+    font-size: 1.1rem;
+    padding: 5px;
+    font-weight: 600;
+    margin-left: 20px;
+
+}
+
+#red {
+    color: #780000;
+}
+
+button.bttn {
+    background-color: #C1121F; 
+    color: #FDF0D5; 
+    font-size: 1.7rem; 
+    padding: 10px 27px; 
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-family: "Caveat Brush", sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 50px; 
+}
+
+button.bttn:hover {
+    background-color: #780000; 
+    transform: scale(1.05); 
+}
+
+button.bttn:focus {
+    outline: none;
+    box-shadow: 0 0 8px #C1121F; 
+}
+
+#waitingArea {
+    color: #003049;
+    font-family: "Tahoma", serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 65%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#waitingArea span {
+    color: #C1121F;
+}
+
+#waitingArea button {
+    background-color: #C1121F;
+    color: #FDF0D5;
+    font-size: 1.1rem;
+    padding: 9px 21px;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    
+    transition: background 0.3s ease;
+    margin: 30px auto; 
+
+}
+
+#waitingArea button:hover {
+    background-color: #780000;
+}
+
+input {
+    width: 160px;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    border: 2px solid #C1121F;
+    border-radius: 8px;
+    outline: none;
+    background-color: #FDF0D5;
+    color: #003049;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #780000;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(193, 18, 31, 0.5);
+}
+
+.btn{
+    cursor: pointer;
+    width: 160px;
+    height: 87px ;
+    margin: 10px 27px 25px 27px;
+    color: #C1121F;
+    border-color: black;
+    border-width: 2px;
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', Times, serif;
+      
+}
+#Hajra-btn {
+    background-image: url('./Shamrock-Malphite.jpg');
+    background-size: cover;
+
+}
+#War9a-btn{
+    background-image:url(istockphoto-1177719511-612x612.jpg) ;
+    background-size: cover;
+}
+#M9as-btn{
+    background-image: url(uecvfmwu3rj81.png) ;
+    background-size: cover;
+}
+#M9as-btn:hover{
+    background-image: url(gwen3.png);
+    background-size: 100% 100%;    
+}
+#Hajra-btn:hover{
+    background-image: url(GN45c6bWwAEkPLr.jpeg);
+    background-size: cover;
+}
+#War9a-btn:hover{
+    background-image: url(images.jpeg);
+    background-size: 100% 100%; 
+}
+
+.btn-container{
+    width: 77%;
+    margin:auto auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#player2Choice{
+    width: 77%;
+    margin: auto   auto;
+    padding : 6px;
+
+}
+
+#winnerArea{
+    font-family: "Sigmar", serif;
+    color: #780000;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 50px; 
+    padding: 12px; 
+}
+
+
+.score {
+    font-weight: bold;
+    color: #003049;
+}
+
+
+#player1Score, #player2Score {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+.test {
+    border: 10px solid rgb(255, 187, 152); 
+    border-radius: 55px; 
+    width: 88%; 
+    margin: auto; 
+    padding: 12px 16px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    background-color: #FDF0D5; 
+}
+
+#replay{
+    margin: 32px auto;
+    background-image: url(14300637337400585234.gif);
+    background-size: cover;
+    height: 147px;
+    display: flex;
+    
+ 
+}
+
+
+.chat {
+    position: fixed;
+    top: 10px;  
+    right: 30px; 
+    z-index: 1000; 
+}
+#message-container{
+    border: 5px #FAD894 solid;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    height: 144px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+
+}
+.sent {
+    background-color: #669BBC; 
+    text-align: right;
+    
+    font-size: 1.2rem;
+    color: #F1F0F0;
+}
+
+.received {
+    background-color: #F1F0F0; 
+    text-align: left;
+    font-size: 1.2rem;
+    color: black;
+}
